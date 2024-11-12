@@ -1,0 +1,46 @@
+CH02 - Controleer of de operanden van de operaties plus en min van gelijk type zijn
+ParWidth := 100px;
+Height := 20%;
+
+p {
+    width: ParWidth + Height;
+}
+
+CH03 - Controleer of er geen kleuren worden gebruikt in operaties (plus, min en keer)
+ParWidth := 100px;
+LinkColor := #ff0000;
+p {
+    width: LinkColor + ParWidth;
+}
+
+
+CH04 - Controleer of bij declaraties het type van de value klopt met de property
+p {
+    color: 100px;
+}
+
+p {
+    width: #ff0000;
+}
+
+
+CH05 - Controleer of de conditie bij een if-statement van het type boolean is
+AdjustColor := TRUE;
+LinkColor := #ff0000;
+
+p {
+    if[LinkColor] {
+        background-color: LinkColor;
+    }
+}
+
+CH06 - Controleer of variabelen enkel binnen hun scope gebruikt worden
+LinkColor := #ff0000;
+AdjustColor := TRUE;
+
+p {
+    if[AdjustColor] {
+        ScopedColor := #00ff00;
+    }
+    background-color: ScopedColor;
+}
